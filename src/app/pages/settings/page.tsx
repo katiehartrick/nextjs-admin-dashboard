@@ -7,12 +7,51 @@ export const metadata: Metadata = {
   title: "Settings Page",
 };
 
-export default function SettingsPage() {
+export default async function SettingsPage() {
+  const res = await fetch('https://www.ecu.edu.au/designs/ecu-internet-2019/helpers/menu-items-json', { cache: 'force-cache' });
+  if (!res.ok) {
+    throw new Error('Failed to fetch menu items');
+  }
+  const menuItems = await res.json();
+  const quicklinks = Array.isArray(menuItems?.quicklinks?.items)
+    ? menuItems.quicklinks.items
+    : [];
+
   return (
     <div className="mx-auto w-full max-w-[1080px]">
       <Breadcrumb pageName="Settings" />
 
       <div className="grid grid-cols-5 gap-8">
+        <div className="col-span-5 xl:col-span-2">
+          <h2 className="text-lg font-semibold mb-2">Quicklinks</h2>
+          <ul className="list-disc pl-2">
+            {quicklinks.map((item: { text: string; href: string }, idx: number) => (
+              <li key={idx}>
+                <a href={item.href} className="text-blue-600 dark:text-blue-200 underline">{item.text}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="col-span-5 xl:col-span-3">
+          <h2 className="text-lg font-semibold mb-2">Tabs</h2>
+          <ul className="list-disc pl-2">
+            {Array.isArray(menuItems?.tabs) && menuItems.tabs.map((tab: any, idx: number) => (
+              <li key={idx}>
+                {tab.name}
+                {Array.isArray(tab.content) && tab.content.length > 0 && (
+                  <ul className="list-circle pl-2 mt-1">
+                    {tab.content.map((item: any, subIdx: number) => (
+                      <li key={subIdx}>
+                        {item.heading}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <div className="col-span-5 xl:col-span-3">
           <PersonalInfoForm />
         </div>
@@ -22,5 +61,5 @@ export default function SettingsPage() {
       </div>
     </div>
   );
-};
+}
 
