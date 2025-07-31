@@ -21,8 +21,8 @@ export default async function SettingsPage() {
     <div className="mx-auto w-full max-w-[1080px]">
       <Breadcrumb pageName="Settings" />
 
-      <div className="mb-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
+      <div className="grid grid-cols-5 gap-8">
+        <div className="col-span-5 xl:col-span-2">
           <h2 className="text-lg font-semibold mb-2">Quicklinks</h2>
           <ul className="list-disc pl-2">
             {quicklinks.map((item: { text: string; href: string }, idx: number) => (
@@ -32,7 +32,7 @@ export default async function SettingsPage() {
             ))}
           </ul>
         </div>
-        <div>
+        <div className="col-span-5 xl:col-span-3">
           <h2 className="text-lg font-semibold mb-2">Tabs</h2>
           <ul className="list-disc pl-2">
             {Array.isArray(menuItems?.tabs) && menuItems.tabs.map((tab: any, idx: number) => (
@@ -51,9 +51,7 @@ export default async function SettingsPage() {
             ))}
           </ul>
         </div>
-      </div>
 
-      <div className="grid grid-cols-5 gap-8">
         <div className="col-span-5 xl:col-span-3">
           <PersonalInfoForm />
         </div>
