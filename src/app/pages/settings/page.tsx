@@ -34,15 +34,15 @@ export default async function SettingsPage() {
         </div>
         <div>
           <h2 className="text-lg font-semibold mb-2">Tabs</h2>
-          <ul className="list-disc pl-5">
-            {Array.isArray(menuItems?.tabs) && menuItems.tabs.map((tab: { name: string; items?: { text: string; href: string }[] }, idx: number) => (
+          <ul className="list-disc pl-2">
+            {Array.isArray(menuItems?.tabs) && menuItems.tabs.map((tab: any, idx: number) => (
               <li key={idx}>
                 {tab.name}
-                {Array.isArray(tab.items) && tab.items.length > 0 && (
-                  <ul className="list-circle pl-5 mt-1">
-                    {tab.items.map((item, subIdx) => (
+                {Array.isArray(tab.content) && tab.content.length > 0 && (
+                  <ul className="list-circle pl-2 mt-1">
+                    {tab.content.map((item: any, subIdx: number) => (
                       <li key={subIdx}>
-                        <a href={item.href} className="text-blue-600 dark:text-blue-200 underline">{item.text}</a>
+                        {item.heading}
                       </li>
                     ))}
                   </ul>
