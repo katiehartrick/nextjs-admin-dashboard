@@ -36,7 +36,7 @@ export default async function SettingsPage() {
           <h2 className="text-lg font-semibold mb-2">Tabs</h2>
           <ul className="list-disc pl-5">
             {Array.isArray(menuItems?.tabs) && menuItems.tabs.map((tab: { heading: string }, idx: number) => (
-              <li key={idx}>{tab.heading}</li>
+              <li key={idx}>{tab.name}</li>
             ))}
           </ul>
         </div>
