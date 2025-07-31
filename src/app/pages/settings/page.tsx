@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default async function SettingsPage() {
-  const res = await fetch('https://www.ecu.edu.au/designs/ecu-internet-2019/helpers/menu-items-json', { cache: 'no-store' });
+  const res = await fetch('https://www.ecu.edu.au/designs/ecu-internet-2019/helpers/menu-items-json', { cache: 'force-cache' });
   if (!res.ok) {
     throw new Error('Failed to fetch menu items');
   }
