@@ -24,8 +24,10 @@ export default async function SettingsPage() {
       <div className="mb-8">
         <h2 className="text-lg font-semibold mb-2">Quicklinks</h2>
         <ul className="list-disc pl-5">
-          {quicklinks.map((item: { text: string }, idx: number) => (
-            <li key={idx}>{item.text}</li>
+          {quicklinks.map((item: { text: string; href: string }, idx: number) => (
+            <li key={idx}>
+              <a href={item.href} className="text-blue-600 underline">{item.text}</a>
+            </li>
           ))}
         </ul>
       </div>
