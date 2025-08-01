@@ -19,14 +19,14 @@ export default async function SettingsPage() {
       <Breadcrumb pageName="Settings" />
 
       <div className="grid grid-cols-5 gap-8">
-        <div className="col-span-5 xl:col-span-3">
-          <h2 className="text-lg font-semibold mb-2">Tabs</h2>
-          <ul className="list-disc pl-2">
+        <div className="col-span-5">
+          <h2 className="text-lg font-semibold mb-2">Contact areas</h2>
+          <ul className="flex flex-wrap gap-8">
             {Array.isArray(menuItems?.tabs) && menuItems.tabs.map((tab: any, idx: number) => (
               <li key={idx}>
-                {tab.name}
+                <span className="font-semibold">{tab.name}</span>
                 {Array.isArray(tab.content) && tab.content.length > 0 && (
-                  <ul className="list-circle pl-2 mt-1">
+                  <ul className="text-sm">
                     {tab.content.map((item: any, subIdx: number) => (
                       <li key={subIdx}>
                         {item.heading}
