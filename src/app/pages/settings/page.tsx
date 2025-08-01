@@ -13,25 +13,12 @@ export default async function SettingsPage() {
     throw new Error('Failed to fetch menu items');
   }
   const menuItems = await res.json();
-  const quicklinks = Array.isArray(menuItems?.quicklinks?.items)
-    ? menuItems.quicklinks.items
-    : [];
 
   return (
     <div className="mx-auto w-full max-w-[1080px]">
       <Breadcrumb pageName="Settings" />
 
       <div className="grid grid-cols-5 gap-8">
-        <div className="col-span-5 xl:col-span-2">
-          <h2 className="text-lg font-semibold mb-2">Quicklinks</h2>
-          <ul className="list-disc pl-2">
-            {quicklinks.map((item: { text: string; href: string }, idx: number) => (
-              <li key={idx}>
-                <a href={item.href} className="text-blue-600 dark:text-blue-200 underline">{item.text}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
         <div className="col-span-5 xl:col-span-3">
           <h2 className="text-lg font-semibold mb-2">Tabs</h2>
           <ul className="list-disc pl-2">
