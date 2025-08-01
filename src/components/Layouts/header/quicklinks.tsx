@@ -2,7 +2,8 @@
 import { useEffect, useState } from "react";
 
 export default function Quicklinks() {
-  const [quicklinks, setQuicklinks] = useState<{ text: string; href: string }[]>([]);
+  const [heading, setHeading] = useState<string>("Quicklinks");
+  const [quicklinks, setQuicklinks] = useState<{ text: string; href: string }[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function Quicklinks() {
           throw new Error('Failed to fetch menu items');
         }
         const menuItems = await res.json();
+        setHeading(menuItems?.quicklinks?.heading || "Quick links");
         const items = Array.isArray(menuItems?.quicklinks?.items)
           ? menuItems.quicklinks.items
           : [];
@@ -27,10 +29,12 @@ export default function Quicklinks() {
   if (error) {
     return <div className="text-red-600">{error}</div>;
   }
-
+  if (quicklinks === null) {
+    return <div>Loading...</div>;
+  }
   return (
     <>
-      <h2 className="text-lg font-semibold mb-2">Quicklinks</h2>
+      <h2 className="text-lg font-semibold mb-2">{heading}</h2>
       <ul className="flex flex-wrap gap-3">
         {quicklinks.map((item, idx) => (
           <li key={idx}>
