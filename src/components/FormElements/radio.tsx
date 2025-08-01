@@ -22,7 +22,7 @@ export function RadioInput({
     <div>
       <label
         htmlFor={id}
-        className="flex cursor-pointer select-none items-center text-body-sm font-medium text-dark dark:text-white"
+        className="flex cursor-pointer select-none items-center text-body-sm font-medium text-black dark:text-white"
       >
         <div className="relative">
           <input
@@ -37,10 +37,10 @@ export function RadioInput({
               "mr-2 flex size-5 items-center justify-center rounded-full border peer-checked:[&>*]:block",
               {
                 "border-primary peer-checked:border-6": variant === "circle",
-                "border-dark-5 peer-checked:border-primary peer-checked:bg-gray-2 dark:border-dark-6 dark:peer-checked:bg-dark-2":
+                "border-black-500 peer-checked:border-primary peer-checked:bg-gray-2 dark:border-black-600 dark:peer-checked:bg-black-800":
                   variant === "dot",
               },
-              minimal && "border-stroke dark:border-dark-3",
+              minimal && "border-stroke dark:border-black-300",
             )}
           >
             <span

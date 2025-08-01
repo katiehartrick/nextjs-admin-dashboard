@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-2 text-dark-5 dark:bg-[#020D1A] dark:text-dark-6;
+    @apply bg-gray-2 text-black-500 dark:bg-[#020D1A] dark:text-black-600;
   }
 }
 
@@ -56,11 +56,11 @@
 }
 
 .apexcharts-legend-text {
-  @apply !text-dark-5 dark:!text-dark-6;
+  @apply !text-black-500 dark:!text-black-600;
 }
 
 .apexcharts-text {
-  @apply !fill-dark-5 dark:!fill-dark-6;
+  @apply !fill-black-500 dark:!fill-black-600;
 }
 
 .apexcharts-yaxis-label {
@@ -72,11 +72,11 @@
 }
 
 .apexcharts-xcrosshairs {
-  @apply !fill-stroke dark:!fill-dark-3;
+  @apply !fill-stroke dark:!fill-black-300;
 }
 
 .apexcharts-gridline {
-  @apply !stroke-stroke dark:!stroke-dark-3;
+  @apply !stroke-stroke dark:!stroke-black-300;
 }
 
 .apexcharts-series.apexcharts-pie-series path {
@@ -88,28 +88,28 @@
 }
 
 .apexcharts-tooltip.apexcharts-theme-light {
-  @apply !rounded-[7px] !text-base !font-medium !text-dark !shadow-card-2 dark:!border-dark-3 dark:!bg-gray-dark dark:!text-white;
+  @apply !rounded-[7px] !text-base !font-medium !text-black !shadow-card-2 dark:!border-black-300 dark:!bg-gray-dark dark:!text-white;
 }
 
 .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
-  @apply dark:!border-dark-3 dark:!bg-dark-2;
+  @apply dark:!border-black-300 dark:!bg-black-800;
 }
 
 .apexcharts-xaxistooltip,
 .apexcharts-yaxistooltip {
-  @apply dark:!border-dark-2 dark:!bg-dark-2 dark:!text-dark-3;
+  @apply dark:!border-black-800 dark:!bg-black-800 dark:!text-black-300;
 }
 
 .apexcharts-xaxistooltip-bottom:after {
-  @apply !border-b-gray dark:!border-b-dark;
+  @apply !border-b-gray dark:!border-b-black;
 }
 
 .apexcharts-xaxistooltip-bottom:before {
-  @apply !border-b-gray dark:!border-b-dark;
+  @apply !border-b-gray dark:!border-b-black;
 }
 
 .apexcharts-xaxistooltip-bottom {
-  @apply !rounded !border-none !bg-gray !text-sm !font-medium !text-dark dark:!bg-dark dark:!text-white;
+  @apply !rounded !border-none !bg-gray !text-sm !font-medium !text-black dark:!bg-black dark:!text-white;
 }
 
 .apexcharts-tooltip-series-group {
@@ -121,11 +121,11 @@
 }
 
 .apexcharts-datalabels-group .apexcharts-datalabel-label {
-  @apply !fill-dark-5 dark:!fill-dark-6;
+  @apply !fill-black-500 dark:!fill-black-600;
 }
 
 .apexcharts-datalabels-group .apexcharts-datalabel-value {
-  @apply !fill-dark dark:!fill-white;
+  @apply !fill-black dark:!fill-white;
 }
 
 .flatpickr-wrapper {
@@ -146,11 +146,11 @@
 }
 
 .flatpickr-calendar {
-  @apply !p-6 !shadow-3 dark:!bg-gray-dark dark:!text-dark-6 dark:!shadow-card 2xsm:!w-auto;
+  @apply !p-6 !shadow-3 dark:!bg-gray-dark dark:!text-black-600 dark:!shadow-card 2xsm:!w-auto;
 }
 
 .flatpickr-day {
-  @apply dark:!text-dark-6 dark:hover:!border-dark-2 dark:hover:!bg-dark-2;
+  @apply dark:!text-black-600 dark:hover:!border-black-800 dark:hover:!bg-black-800;
 }
 
 .flatpickr-months .flatpickr-prev-month,
@@ -192,7 +192,7 @@ span.flatpickr-weekday,
 .flatpickr-day:focus,
 .flatpickr-day.prevMonthDay:focus,
 .flatpickr-day.nextMonthDay:focus {
-  @apply !border-gray-2 !bg-gray-2 dark:!border-dark-2 dark:!bg-dark-2;
+  @apply !border-gray-2 !bg-gray-2 dark:!border-black-800 dark:!bg-black-800;
 }
 
 .flatpickr-day.selected,
@@ -203,7 +203,7 @@ span.flatpickr-weekday,
 }
 
 .flatpickr-day.today {
-  @apply !border-none hover:!bg-gray-2 hover:!text-dark dark:hover:!bg-dark-2 dark:hover:!text-white;
+  @apply !border-none hover:!bg-gray-2 hover:!text-black dark:hover:!bg-black-800 dark:hover:!text-white;
 }
 
 .flatpickr-day.selected,
@@ -235,7 +235,7 @@ span.flatpickr-weekday,
 }
 
 .map-btn .jvm-zoom-btn {
-  @apply flex h-7.5 w-7.5 items-center justify-center rounded border border-stroke bg-white px-0 pb-0.5 pt-0 text-2xl leading-none text-dark-5 hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:bg-dark-2 dark:text-dark-6 dark:hover:border-primary dark:hover:bg-primary dark:hover:text-white;
+  @apply flex h-7.5 w-7.5 items-center justify-center rounded border border-stroke bg-white px-0 pb-0.5 pt-0 text-2xl leading-none text-black-500 hover:border-primary hover:bg-primary hover:text-white dark:border-black-300 dark:bg-black-800 dark:text-black-600 dark:hover:border-primary dark:hover:bg-primary dark:hover:text-white;
 }
 
 .mapOne .jvm-zoom-btn {
@@ -300,7 +300,7 @@ span.flatpickr-weekday,
 .carouselOne .swiper-button-prev,
 .carouselThree .swiper-button-next,
 .carouselThree .swiper-button-prev {
-  @apply h-10 w-10 rounded-full bg-white !text-dark-5 shadow-card-2 dark:bg-dark-2 dark:!text-dark-6 sm:h-12.5 sm:w-12.5;
+  @apply h-10 w-10 rounded-full bg-white !text-black-500 shadow-card-2 dark:bg-black-800 dark:!text-black-600 sm:h-12.5 sm:w-12.5;
 }
 
 .carouselOne .swiper-button-prev,
@@ -330,7 +330,7 @@ span.flatpickr-weekday,
 
 .data-stats-slider-outer .swiper-button-next,
 .data-stats-slider-outer .swiper-button-prev {
-  @apply top-1/2 h-11.5 w-11.5 rounded-full border border-stroke bg-white !text-dark drop-shadow-card dark:border-dark-3 dark:bg-dark-2 dark:!text-white;
+  @apply top-1/2 h-11.5 w-11.5 rounded-full border border-stroke bg-white !text-black drop-shadow-card dark:border-black-300 dark:bg-black-800 dark:!text-white;
 }
 
 .data-stats-slider-outer .swiper-button-next.swiper-button-disabled,
@@ -351,19 +351,19 @@ span.flatpickr-weekday,
 }
 
 .data-table-one .datatable-search input {
-  @apply h-[46px] w-full rounded border border-stroke bg-transparent px-5 outline-none focus:border-primary dark:border-dark-3 dark:bg-dark-2 dark:focus:border-primary;
+  @apply h-[46px] w-full rounded border border-stroke bg-transparent px-5 outline-none focus:border-primary dark:border-black-300 dark:bg-black-800 dark:focus:border-primary;
 }
 
 .data-table-common .datatable-selector {
-  @apply relative z-20 inline-flex bg-transparent p-0 font-medium text-dark-5 outline-none dark:text-dark-6;
+  @apply relative z-20 inline-flex bg-transparent p-0 font-medium text-black-500 outline-none dark:text-black-600;
 }
 
 .data-table-common .datatable-top {
-  @apply flex flex-col gap-4 border-b border-stroke px-7.5 py-4.5 after:hidden dark:border-dark-6 sm:flex-row-reverse sm:items-center sm:justify-between sm:gap-x-4 sm:gap-y-0;
+  @apply flex flex-col gap-4 border-b border-stroke px-7.5 py-4.5 after:hidden dark:border-black-600 sm:flex-row-reverse sm:items-center sm:justify-between sm:gap-x-4 sm:gap-y-0;
 }
 
 .data-table-common .datatable-dropdown label {
-  @apply inline-flex items-center gap-2.5 font-medium capitalize text-dark dark:text-white;
+  @apply inline-flex items-center gap-2.5 font-medium capitalize text-black dark:text-white;
 }
 
 .datatable-table .datatable-sorter {
@@ -385,11 +385,11 @@ span.flatpickr-weekday,
 }
 
 .data-table-common .datatable-table > thead > tr:last-child > th {
-  @apply !border-b border-stroke pb-6 dark:border-dark-3;
+  @apply !border-b border-stroke pb-6 dark:border-black-300;
 }
 
 .data-table-common .datatable-table > thead > tr:last-child > th input {
-  @apply h-[34px] w-full rounded border border-stroke bg-transparent px-3 text-sm outline-none focus:border-primary dark:border-dark-3 dark:bg-dark-2 dark:focus:border-primary;
+  @apply h-[34px] w-full rounded border border-stroke bg-transparent px-3 text-sm outline-none focus:border-primary dark:border-black-300 dark:bg-black-800 dark:focus:border-primary;
 }
 
 .data-table-common .datatable-table > tbody > tr {
@@ -401,7 +401,7 @@ span.flatpickr-weekday,
 }
 
 .data-table-common .datatable-table > tbody > tr > td {
-  @apply border-b border-stroke py-5 font-medium dark:border-dark-3;
+  @apply border-b border-stroke py-5 font-medium dark:border-black-300;
 }
 
 .data-table-one .datatable-bottom {
@@ -421,7 +421,7 @@ span.flatpickr-weekday,
 }
 
 .data-table-common .datatable-pagination a {
-  @apply flex h-8 w-8 cursor-pointer items-center justify-center rounded p-0 font-medium text-dark-5 hover:bg-primary hover:text-white dark:text-dark-6;
+  @apply flex h-8 w-8 cursor-pointer items-center justify-center rounded p-0 font-medium text-black-500 hover:bg-primary hover:text-white dark:text-black-600;
 }
 
 .data-table-common .datatable-pagination .datatable-active a {
@@ -437,7 +437,7 @@ span.flatpickr-weekday,
 }
 
 .data-table-two .datatable-search input {
-  @apply h-11.5 w-full rounded border border-stroke bg-gray-2 px-5 outline-none focus:border-primary dark:border-dark-3 dark:bg-dark-2 dark:focus:border-primary;
+  @apply h-11.5 w-full rounded border border-stroke bg-gray-2 px-5 outline-none focus:border-primary dark:border-black-300 dark:bg-black-800 dark:focus:border-primary;
 }
 
 .rangeSliderCommon .noUi-target {
@@ -445,7 +445,7 @@ span.flatpickr-weekday,
 }
 
 .rangeSliderCommon .noUi-connects {
-  @apply h-1.5 rounded-full bg-stroke dark:bg-dark-3;
+  @apply h-1.5 rounded-full bg-stroke dark:bg-black-300;
 }
 
 .rangeSliderCommon .noUi-connect {
@@ -457,7 +457,7 @@ span.flatpickr-weekday,
 }
 
 .rangeSliderTwo .noUi-horizontal .noUi-handle {
-  @apply -top-2 h-6 w-6 rounded-full border-[6px] border-primary bg-white shadow-none dark:bg-dark;
+  @apply -top-2 h-6 w-6 rounded-full border-[6px] border-primary bg-white shadow-none dark:bg-black;
 }
 
 .noUi-horizontal .noUi-handle:after,

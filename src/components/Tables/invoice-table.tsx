@@ -16,10 +16,10 @@ export async function InvoiceTable() {
   const data = await getInvoiceTableData();
 
   return (
-    <div className="rounded-[10px] border border-stroke bg-white p-4 shadow-1 dark:border-dark-3 dark:bg-gray-dark dark:shadow-card sm:p-7.5">
+    <div className="rounded-[10px] border border-stroke bg-white p-4 shadow-1 dark:border-black-300 dark:bg-gray-dark dark:shadow-card sm:p-7.5">
       <Table>
         <TableHeader>
-          <TableRow className="border-none bg-[#F7F9FC] dark:bg-dark-2 [&>th]:py-4 [&>th]:text-base [&>th]:text-dark [&>th]:dark:text-white">
+          <TableRow className="border-none bg-[#F7F9FC] dark:bg-black-800 [&>th]:py-4 [&>th]:text-base [&>th]:text-black [&>th]:dark:text-white">
             <TableHead className="min-w-[155px] xl:pl-7.5">Package</TableHead>
             <TableHead>Invoice Date</TableHead>
             <TableHead>Status</TableHead>
@@ -29,16 +29,16 @@ export async function InvoiceTable() {
 
         <TableBody>
           {data.map((item, index) => (
-            <TableRow key={index} className="border-[#eee] dark:border-dark-3">
+            <TableRow key={index} className="border-[#eee] dark:border-black-300">
               <TableCell className="min-w-[155px] xl:pl-7.5">
-                <h5 className="text-dark dark:text-white">{item.name}</h5>
+                <h5 className="text-black dark:text-white">{item.name}</h5>
                 <p className="mt-[3px] text-body-sm font-medium">
                   ${item.price}
                 </p>
               </TableCell>
 
               <TableCell>
-                <p className="text-dark dark:text-white">
+                <p className="text-black dark:text-white">
                   {dayjs(item.date).format("MMM DD, YYYY")}
                 </p>
               </TableCell>

@@ -22,7 +22,7 @@ const CheckboxOne = () => {
             className={`mr-2 flex h-5 w-5 items-center justify-center rounded border ${
               isChecked
                 ? "border-primary bg-gray-2 dark:bg-transparent"
-                : "border-dark-5 dark:border-dark-6"
+                : "border-black-500 dark:border-black-600"
             }`}
           >
             <span

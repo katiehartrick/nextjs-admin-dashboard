@@ -72,7 +72,7 @@ export function PersonalInfoForm() {
 
         <div className="flex justify-end gap-3">
           <button
-            className="rounded-lg border border-stroke px-6 py-[7px] font-medium text-dark hover:shadow-1 dark:border-dark-3 dark:text-white"
+            className="rounded-lg border border-stroke px-6 py-[7px] font-medium text-black hover:shadow-1 dark:border-black-300 dark:text-white"
             type="button"
           >
             Cancel

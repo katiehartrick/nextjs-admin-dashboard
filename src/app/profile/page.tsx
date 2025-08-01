@@ -107,25 +107,25 @@ export default function Page() {
             </div>
           </div>
           <div className="mt-4">
-            <h3 className="mb-1 text-lg font-bold text-dark dark:text-white">
+            <h3 className="mb-1 text-lg font-bold text-black dark:text-white">
               {data?.name}
             </h3>
             <p className="font-medium">Ui/Ux Designer</p>
-            <div className="mx-auto mb-5.5 mt-5 grid max-w-[370px] grid-cols-3 rounded-[5px] border border-stroke py-[9px] shadow-1 dark:border-dark-3 dark:bg-dark-2 dark:shadow-card">
-              <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-dark-3 xsm:flex-row">
-                <span className="font-medium text-dark dark:text-white">
+            <div className="mx-auto mb-5.5 mt-5 grid max-w-[370px] grid-cols-3 rounded-[5px] border border-stroke py-[9px] shadow-1 dark:border-black-300 dark:bg-black-800 dark:shadow-card">
+              <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-black-300 xsm:flex-row">
+                <span className="font-medium text-black dark:text-white">
                   259
                 </span>
                 <span className="text-body-sm">Posts</span>
               </div>
-              <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-dark-3 xsm:flex-row">
-                <span className="font-medium text-dark dark:text-white">
+              <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-black-300 xsm:flex-row">
+                <span className="font-medium text-black dark:text-white">
                   129K
                 </span>
                 <span className="text-body-sm">Followers</span>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 px-4 xsm:flex-row">
-                <span className="font-medium text-dark dark:text-white">
+                <span className="font-medium text-black dark:text-white">
                   2K
                 </span>
                 <span className="text-body-sm-sm">Following</span>
@@ -133,7 +133,7 @@ export default function Page() {
             </div>
 
             <div className="mx-auto max-w-[720px]">
-              <h4 className="font-medium text-dark dark:text-white">
+              <h4 className="font-medium text-black dark:text-white">
                 About Me
               </h4>
               <p className="mt-4">

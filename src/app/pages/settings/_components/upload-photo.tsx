@@ -17,7 +17,7 @@ export function UploadPhotoForm() {
           />
 
           <div>
-            <span className="mb-1.5 font-medium text-dark dark:text-white">
+            <span className="mb-1.5 font-medium text-black dark:text-white">
               Edit your photo
             </span>
             <span className="flex gap-3">
@@ -31,7 +31,7 @@ export function UploadPhotoForm() {
           </div>
         </div>
 
-        <div className="relative mb-5.5 block w-full rounded-xl border border-dashed border-gray-4 bg-gray-2 hover:border-primary dark:border-dark-3 dark:bg-dark-2 dark:hover:border-primary">
+        <div className="relative mb-5.5 block w-full rounded-xl border border-dashed border-gray-4 bg-gray-2 hover:border-primary dark:border-black-300 dark:bg-black-800 dark:hover:border-primary">
           <input
             type="file"
             name="profilePhoto"
@@ -44,7 +44,7 @@ export function UploadPhotoForm() {
             htmlFor="profilePhoto"
             className="flex cursor-pointer flex-col items-center justify-center p-4 sm:py-7.5"
           >
-            <div className="flex size-13.5 items-center justify-center rounded-full border border-stroke bg-white dark:border-dark-3 dark:bg-gray-dark">
+            <div className="flex size-13.5 items-center justify-center rounded-full border border-stroke bg-white dark:border-black-300 dark:bg-gray-dark">
               <UploadIcon />
             </div>
 
@@ -61,7 +61,7 @@ export function UploadPhotoForm() {
 
         <div className="flex justify-end gap-3">
           <button
-            className="flex justify-center rounded-lg border border-stroke px-6 py-[7px] font-medium text-dark hover:shadow-1 dark:border-dark-3 dark:text-white"
+            className="flex justify-center rounded-lg border border-stroke px-6 py-[7px] font-medium text-black hover:shadow-1 dark:border-black-300 dark:text-white"
             type="button"
           >
             Cancel

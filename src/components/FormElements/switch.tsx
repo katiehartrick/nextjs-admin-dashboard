@@ -43,7 +43,7 @@ export function Switch({
         >
           {withIcon && (
             <>
-              <CheckIcon className="check-icon hidden fill-white dark:fill-dark" />
+              <CheckIcon className="check-icon hidden fill-white dark:fill-black" />
               <XIcon className="x-icon" />
             </>
           )}

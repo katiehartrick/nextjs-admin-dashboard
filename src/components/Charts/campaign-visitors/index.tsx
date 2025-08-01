@@ -14,13 +14,13 @@ export async function CampaignVisitors({ className }: { className?: string }) {
         className,
       )}
     >
-      <div className="border-b border-stroke px-6 py-5.5 dark:border-dark-3">
+      <div className="border-b border-stroke px-6 py-5.5 dark:border-black-300">
         <div className="flex justify-between">
-          <h2 className="mb-1.5 text-2xl font-bold text-dark dark:text-white">
+          <h2 className="mb-1.5 text-2xl font-bold text-black dark:text-white">
             Campaign Visitors
           </h2>
 
-          <div className="mb-0.5 text-2xl font-bold text-dark dark:text-white">
+          <div className="mb-0.5 text-2xl font-bold text-black dark:text-white">
             {compactFormat(data.total_visitors)}
           </div>
         </div>

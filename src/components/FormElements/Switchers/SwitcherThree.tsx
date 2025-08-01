@@ -26,7 +26,7 @@ const SwitcherThree = () => {
           >
             <span className={`hidden ${enabled && "!block"}`}>
               <svg
-                className="fill-white dark:fill-dark"
+                className="fill-white dark:fill-black"
                 width="11"
                 height="8"
                 viewBox="0 0 11 8"

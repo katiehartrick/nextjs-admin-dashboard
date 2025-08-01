@@ -20,11 +20,11 @@ export function OverviewCard({ label, data, Icon }: PropsType) {
 
       <div className="mt-6 flex items-end justify-between">
         <dl>
-          <dt className="mb-1.5 text-lg font-bold text-dark dark:text-white">
+          <dt className="mb-1.5 text-lg font-bold text-black dark:text-white">
             {data.value}
           </dt>
 
-          <dd className="text-sm font-medium text-dark-6">{label}</dd>
+          <dd className="text-sm font-medium text-black-600">{label}</dd>
         </dl>
 
         <dl
