@@ -43,7 +43,7 @@ export default function SignIn() {
                 Sign in to your account
               </p>
 
-              <h1 className="mb-4 text-2xl font-bold text-dark dark:text-white sm:text-heading-3">
+              <h1 className="mb-4 text-2xl font-bold text-dark dark:text-white sm:text-lg">
                 Welcome Back!
               </h1>
 

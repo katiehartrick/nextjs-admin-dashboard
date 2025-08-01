@@ -98,7 +98,6 @@ const config: Config = {
       fontSize: {
         "heading-1": ["60px", "72px"],
         "heading-2": ["48px", "58px"],
-        "heading-3": ["40px", "48px"],
         "heading-4": ["35px", "45px"],
         "heading-5": ["28px", "40px"],
         "body-2xlg": ["22px", "28px"],
