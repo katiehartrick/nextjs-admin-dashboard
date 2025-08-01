@@ -11,10 +11,10 @@ export default async function Quicklinks() {
   return (
     <>
       <h2 className="text-lg font-semibold mb-2">Quicklinks</h2>
-      <ul className="list-disc pl-2">
+      <ul className="flex flex-wrap gap-3">
         {quicklinks.map((item: { text: string; href: string }, idx: number) => (
           <li key={idx}>
-            <a href={item.href} className="text-blue-600 dark:text-blue-200 underline">{item.text}</a>
+            <a href={item.href} className="text-blue-600 dark:text-blue-100 underline">{item.text}</a>
           </li>
         ))}
       </ul>
