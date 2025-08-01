@@ -101,7 +101,6 @@ const config: Config = {
         "heading-3": ["40px", "48px"],
         "heading-4": ["35px", "45px"],
         "heading-5": ["28px", "40px"],
-        "heading-6": ["24px", "30px"],
         "body-2xlg": ["22px", "28px"],
         "body-sm": ["14px", "22px"],
         "body-xs": ["12px", "20px"],

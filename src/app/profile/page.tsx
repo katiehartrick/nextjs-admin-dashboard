@@ -107,7 +107,7 @@ export default function Page() {
             </div>
           </div>
           <div className="mt-4">
-            <h3 className="mb-1 text-heading-6 font-bold text-dark dark:text-white">
+            <h3 className="mb-1 text-lg font-bold text-dark dark:text-white">
               {data?.name}
             </h3>
             <p className="font-medium">Ui/Ux Designer</p>
