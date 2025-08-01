@@ -68,7 +68,7 @@
 }
 
 .apexcharts-xaxis-label {
-  @apply text-body-sm font-medium;
+  @apply text-sm font-medium;
 }
 
 .apexcharts-xcrosshairs {
