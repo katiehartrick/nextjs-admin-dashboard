@@ -38,7 +38,7 @@ export function Header() {
         )}
 
         <div className="max-xl:hidden">
-          <h1 className="mb-0.5 text-heading-5 font-bold text-dark dark:text-white">
+          <h1 className="mb-0.5 text-heading-7 font-bold text-dark dark:text-white">
             Digital Marketing, Experience and Analytics Team
           </h1>
           <p className="font-medium">Rebuild of ECU web tools using Next.js</p>
